@@ -1,5 +1,5 @@
 {
-  "name": "studbud",
+  "name": "projectivity",
   "version": "1.0.0",
   "description": "Assignment 3 repository",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/drew-usyd/studbud.git"
+    "url": "git+https://github.com/reginaraine/projectivity.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/drew-usyd/studbud/issues"
+    "url": "https://github.com/reginaraine/projectivity/issues"
   },
-  "homepage": "https://github.com/drew-usyd/studbud#readme",
+  "homepage": "https://github.com/reginaraine/projectivity#readme",
   "dependencies": {
     "express": "^4.17.3",
     "sass": "^1.51.0"
