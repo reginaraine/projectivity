@@ -1,7 +1,8 @@
 {
   "name": "projectivity",
   "version": "1.0.0",
-  "description": "Assignment 3 repository",
+  "description": "A Web Application to Improve your Project Productivity.",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -12,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/reginaraine/projectivity.git"
   },
-  "author": "",
+  "author": "Regina Yango",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/reginaraine/projectivity/issues"
