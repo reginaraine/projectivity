@@ -12,32 +12,36 @@ p, a, h1, h2, h3 {
 }
 
 .topnav {
-    overflow: hidden;
-    color: #ffffff;
-    text-align: center;
-    padding: 100px 150px;
-    text-decoration: none;
-    font-size: 2.5rem;
-  }
-
-  .topnav a {
-    float: left;
-    text-decoration: none;
-    font-weight: 400;
-    color: #ffffff;
-  }
-
-  .topnav h3 {
-    float: right;
-    font-weight: 400;
-    font-size: 1.6rem;
-    font-style: italic;
+  overflow: hidden;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px;
+  text-decoration: none;
+  font-size: 2vw;
 }
 
-  #big-text {
-    padding: 100px 150px;
-    font-size: 10rem;
-    color: #ffffff;
-    width: 50%;
+.topnav a {
+  float: left;
+  text-decoration: none;
+  font-weight: 400;
+  color: #ffffff;
+}
 
-  }
+.topnav h3 {
+  float: right;
+  font-weight: 400;
+  font-size: 1.5vw;
+  font-style: italic;
+}
+
+#big-text {
+  width: 40%;
+  padding: 50px 100px;
+}
+
+#big-text h1 {
+  font-size: 7.5vw;
+  color: #ffffff;
+  font-weight: 400;
+}
+

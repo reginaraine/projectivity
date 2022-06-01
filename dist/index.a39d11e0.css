@@ -13,8 +13,8 @@ p, a, h1, h2, h3 {
 .topnav {
   color: #fff;
   text-align: center;
-  padding: 100px 150px;
-  font-size: 2.5rem;
+  padding: 100px;
+  font-size: 2vw;
   text-decoration: none;
   overflow: hidden;
 }
@@ -28,16 +28,20 @@ p, a, h1, h2, h3 {
 
 .topnav h3 {
   float: right;
-  font-size: 1.6rem;
+  font-size: 1.5vw;
   font-style: italic;
   font-weight: 400;
 }
 
 #big-text {
+  width: 40%;
+  padding: 50px 100px;
+}
+
+#big-text h1 {
   color: #fff;
-  width: 50%;
-  padding: 100px 150px;
-  font-size: 10rem;
+  font-size: 7.5vw;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=index.a39d11e0.css.map */
