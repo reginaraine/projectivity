@@ -6,14 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projectivity</title>
     <link rel="stylesheet" href="styles.scss" />
+    <!-- Shows a hamburger menu (bars) on small screens... from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <nav class="top-nav">
-        <a  href="#home">projectivity</a>
+    <nav class="main-nav">
         <ul>
+            <a id="logo" href="index.html">projectivity</a>
             <li><a href="task.html">task</a></li>
             <li><a href="time.html">time</a></li>
             <li><a href="resources.html">resources</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a></li>
         </ul>
     </nav>
+
+    <div class="add-task" id="task-form">
+        <form action="/action_page.php" class="form-container">
+            <h3>add new task</h3>
+            <form id="new-task-form">
+                <ul>
+                    <li>
+                        <label for="taskname">task name </label>
+                        <input type="text" name="projectname" id="projectName">
+                    </li>
+                    <li>
+                        <label for="duedate">due date: </label>
+                        <input type="date" name="duedate" id="dueDate">
+                    </li>
+                    <li>
+                        <label for="rating">priority rating: </label>
+                        <select name="rating" id="ratings">
+                            <option value="low">low</option>
+                            <option value="medium">medium</option>
+                            <option value="high">high</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="statuses">completion status: </label>
+                        <select name="statuses" id="status">
+                            <option value="to-do">to do</option>
+                            <option value="in-progress">in progress</option>
+                            <option value="done">done</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="description">description </label>
+                        <input type="text" name="description" id="description">
+                    </li>
+                </ul>
+                <button id="done" type="submit">Done</button>
+            </form>
+        </div>
+
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-4c559d3b-ae8e-4453-bc77-a1d4afe7de6b">
+    </div>
+    
+</body>
+

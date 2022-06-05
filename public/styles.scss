@@ -42,7 +42,7 @@ p, a, h1, h2, h3 {
 
 #big-text {
   width: 40%;
-  padding: 50px 100px;
+  padding: 10px 100px;
 }
 
 #big-text h1 {
@@ -59,10 +59,8 @@ p, a, h1, h2, h3 {
 
 .bottom-nav ul {
   display: inline-flex;
-  height: 70%;
   width: 80%;
   list-style-type: none;
-  margin: 5vw;
   justify-content: space-between;
   padding-inline-start: 0px;
 }
@@ -78,50 +76,59 @@ p, a, h1, h2, h3 {
   text-decoration: underline;
 }
 
-.bottom-nav a:visited {
+.main-nav ul {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100vw;
+  padding: 50px; 
+  margin: 0;
+  list-style: none;
+}
+
+.main-nav #logo {
+  margin-right: 55vw;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-nav ul li{
+  font-weight: 400;
+  font-size: 1.5vw;
+  margin-left: 50px;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+
+.main-nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Add an active class to highlight the current page */
+.main-nav ul li a:active{
+  color: #e5a371;
+}
+
+.icon:hover{
+  color: #ef8a3c;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.main-nav .icon {
+  display: none;
+}
+
+/* The links hide when the screen is less than 600 pixels wide. (.icon) will be shown to open and close the nav. */
 @media screen and (max-width: 600px) {
   .main-nav ul li a {display: none;}
   .main-nav a.icon {
     float: right;
     display: block;
   }
-}
-
-.main-nav ul {
-  padding: 0; 
-  margin: 0;
-  list-style: none;
-}
-
-.main-nav ul li #logo {
-  float: left;
-}
-
-.main-nav ul li{
-  float: right;
-  margin-left: 50px;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-}
-
-.main-nav ul li a{
-  text-decoration: none;
-  color: #222222;
-}
-
-/* The links hide when the screen is less than 600 pixels wide. (.icon) will be shown to open and close the nav. */
-.main-nav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
 }
 
 /* I add the "responsive" class to the main-nav with JavaScript so that  when the user clicks on the icon, the main-nav corresponds to the size of smaller screens. It displays the links vertically instead of horizontally */
@@ -141,3 +148,73 @@ p, a, h1, h2, h3 {
   }
 }
 
+#task-form {
+  margin: 3vh 5vw;
+  width: 20%;
+  border-style: dotted;
+  border-color: #ffffff;
+  border-radius: 15px;
+  padding: 2vw 5vh;
+}
+
+.add-task h3 {
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+
+.form-container {
+  background-color: transparent;
+}
+
+.form-container label {
+  background-color: transparent;
+  display: block;
+}
+
+.form-container ul {
+  background-color: transparent;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 1vw;
+}
+
+.form-container ul li {
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-container li+li {
+  margin-top: 20px;
+}
+
+.form-container input {
+  width: 85%;
+  background-color: rgb(255, 255, 255, 0.4);
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: transparent;
+}
+
+.form-container select {
+  width: 50%;
+  height: auto;
+  background-color: rgb(255, 255, 255, 0.4);
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: transparent;
+}
+
+button {
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .add-task {
+      width: 50%;
+      height: 70%;
+  }
+}
