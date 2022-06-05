@@ -13,6 +13,7 @@ body {
   background-position: center 45%;    
 }
   
+// assigns all text types to the same consistent font
 p, a, h1, h2, h3, span {
   font-family: 'Montserrat', sans-serif;
 }
@@ -104,11 +105,11 @@ p, a, h1, h2, h3, span {
   text-align: center;
 }
 
+// user feedback to ensure users know it is a link
 .main-nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Add an active class to highlight the current page */
 .main-nav ul li a:active{
   color: #e5a371;
 }
@@ -117,12 +118,11 @@ p, a, h1, h2, h3, span {
   color: #ef8a3c;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
+//link hides depending on size of the screen
 .main-nav .icon {
   display: none;
 }
 
-/* The links hide when the screen is less than 600 pixels wide. (.icon) will be shown to open and close the nav. */
 @media screen and (max-width: 600px) {
   .main-nav ul li a {display: none;}
   .main-nav a.icon {
@@ -131,7 +131,7 @@ p, a, h1, h2, h3, span {
   }
 }
 
-/* I add the "responsive" class to the main-nav with JavaScript so that  when the user clicks on the icon, the main-nav corresponds to the size of smaller screens. It displays the links vertically instead of horizontally */
+/* displays the links vertically instead of horizontally */
 @media screen and (max-width: 600px) {
   .main-nav.responsive {
     position: relative;
@@ -148,6 +148,7 @@ p, a, h1, h2, h3, span {
   }
 }
 
+// a form for users to input details about a task
 #task-form {
   margin: 3vh 5vw;
   width: 20%;
@@ -229,6 +230,7 @@ button {
   }
 }
 
+// stopwatch placed in the center with buttons
 #mainstopwatch {
   width: 400px;
   height: 50vh;
@@ -239,33 +241,37 @@ button {
   background: rgb(255, 255, 255, 0.4);
   border-radius:40px;
   background: rgb(255, 255, 255, 0.4);
-  }
+}
 
-  #mainstopwatch button{
-    font-size: 1vw;
-    -webkit-appearance: none;
-    border:none;
-    background-color: #ffffff;
-    color:rgb(0, 0, 0);
-    width: 5vw;
-    height: 4vh;
-    justify-content: space-between;
-    transition:0.2s;
-    border-radius:40px;
-    }
+#mainstopwatch button{
+  font-size: 1vw;
+  -webkit-appearance: none;
+  border:none;
+  background-color: #ffffff;
+  color:rgb(0, 0, 0);
+  width: 5vw;
+  height: 4vh;
+  justify-content: space-between;
+  transition:0.2s;
+  border-radius:40px;
+}
 
+// changes colour of each button to make the stopwatch similar to user's knowledge of the button's functions
   #mainstopwatch button:nth-child(even){
     background-color: rgb(229, 130, 130);
   }
+
   #mainstopwatch button:last-child{
     background-color: #73ac89;
   }
+
   #mainstopwatch button:hover{
     background:rgb(255, 255, 255, 0.7);    ;
     border-radius:35px;
      transition: 0.2s;
         }
 
+// resources page to add gathered resources during the project
 .resources-container {
   margin: 3vh 5vw;
   width: 20%;

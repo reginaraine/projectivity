@@ -1,7 +1,9 @@
+// event for when the button is clicked
 let subButton = document.getElementById("addTaskBtn");
 
 renderItems();
 
+// listens to when the button is clicked to follow through with function
 subButton.addEventListener("click", function() {
 
     let projectName = document.getElementById("projectName").value;
@@ -38,6 +40,7 @@ subButton.addEventListener("click", function() {
   renderItems();
 });
 
+// function gets items from storage and makes sure there are no pre-existing items
 function getItems() {
   let items = localStorage.getItem('items');
 
@@ -61,7 +64,7 @@ function renderItems() {
 
     let itemLi = document.createElement('li');
 
-  
+  //span elements to hold the info of each item
     let projectName = document.createElement('span');
     projectName.setAttribute('class', 'projectName');
     projectName.innerText = item.projectName;
