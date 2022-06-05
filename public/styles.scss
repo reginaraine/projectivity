@@ -13,7 +13,7 @@ body {
   background-position: center 45%;    
 }
   
-p, a, h1, h2, h3 {
+p, a, h1, h2, h3, span {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -212,9 +212,80 @@ button {
   margin-top: 10px;
 }
 
+.task-column-1 {
+  margin: 3vh 5vw;
+  width: 20%;
+  border-style: dotted;
+  border-color: #ffffff;
+  border-radius: 15px;
+  padding: 2vw 5vh;
+  position: center;
+}
+
 @media (max-width: 900px) {
   .add-task {
       width: 50%;
       height: 70%;
   }
 }
+
+#mainstopwatch {
+  width: 400px;
+  height: 50vh;
+  margin:100px auto;
+  padding:60px 50px 10px;
+  text-align:center;
+  font-size: 40px;
+  background: rgb(255, 255, 255, 0.4);
+  border-radius:40px;
+  background: rgb(255, 255, 255, 0.4);
+  }
+
+  #mainstopwatch button{
+    font-size: 1vw;
+    -webkit-appearance: none;
+    border:none;
+    background-color: #ffffff;
+    color:rgb(0, 0, 0);
+    width: 5vw;
+    height: 4vh;
+    justify-content: space-between;
+    transition:0.2s;
+    border-radius:40px;
+    }
+
+  #mainstopwatch button:nth-child(even){
+    background-color: rgb(229, 130, 130);
+  }
+  #mainstopwatch button:last-child{
+    background-color: #73ac89;
+  }
+  #mainstopwatch button:hover{
+    background:rgb(255, 255, 255, 0.7);    ;
+    border-radius:35px;
+     transition: 0.2s;
+        }
+
+.resources-container {
+  margin: 3vh 5vw;
+  width: 20%;
+  border-style: dotted;
+  border-color: #ffffff;
+  border-radius: 15px;
+  padding: 2vw 5vh;
+}
+
+.resources-container h3 {
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+
+.resource-add {
+  background-color: transparent;
+}
+
+.resource-add label {
+  background-color: transparent;
+  display: block;
+}
+
