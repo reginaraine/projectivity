@@ -1,4 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap";
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
 body {
   background-image: url("background.de7f9990.jpg");
   background-position: 50% 45%;
@@ -10,7 +16,7 @@ p, a, h1, h2, h3 {
   font-family: Montserrat, sans-serif;
 }
 
-.topnav {
+.top-nav {
   color: #fff;
   text-align: center;
   padding: 100px;
@@ -19,14 +25,14 @@ p, a, h1, h2, h3 {
   overflow: hidden;
 }
 
-.topnav a {
+.top-nav a {
   float: left;
   color: #fff;
   font-weight: 400;
   text-decoration: none;
 }
 
-.topnav h3 {
+.top-nav h3 {
   float: right;
   font-size: 1.5vw;
   font-style: italic;
@@ -40,8 +46,97 @@ p, a, h1, h2, h3 {
 
 #big-text h1 {
   color: #fff;
-  font-size: 7.5vw;
+  font-size: 6vw;
   font-weight: 400;
+}
+
+.bottom-nav {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+.bottom-nav ul {
+  height: 70%;
+  width: 80%;
+  justify-content: space-between;
+  margin: 5vw;
+  padding-inline-start: 0;
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.bottom-nav li a {
+  color: #fff;
+  font-size: 6vw;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.bottom-nav a:hover, .bottom-nav a:visited {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .main-nav ul li a {
+    display: none;
+  }
+
+  .main-nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav ul li #logo {
+  float: left;
+}
+
+.main-nav ul li {
+  float: right;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-left: 50px;
+  font-size: 18px;
+}
+
+.main-nav ul li a {
+  color: #222;
+  text-decoration: none;
+}
+
+.main-nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  text-decoration: none;
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .main-nav.responsive {
+    position: relative;
+  }
+
+  .main-nav.responsive a.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .main-nav.responsive a {
+    float: none;
+    text-align: left;
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=index.a39d11e0.css.map */

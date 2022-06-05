@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
 
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+
 body {
   background-image: url("../assets/background.jpg");
   background-repeat: no-repeat;
@@ -11,7 +17,7 @@ p, a, h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
-.topnav {
+.top-nav {
   overflow: hidden;
   color: #ffffff;
   text-align: center;
@@ -20,14 +26,14 @@ p, a, h1, h2, h3 {
   font-size: 2vw;
 }
 
-.topnav a {
+.top-nav a {
   float: left;
   text-decoration: none;
   font-weight: 400;
   color: #ffffff;
 }
 
-.topnav h3 {
+.top-nav h3 {
   float: right;
   font-weight: 400;
   font-size: 1.5vw;
@@ -40,8 +46,98 @@ p, a, h1, h2, h3 {
 }
 
 #big-text h1 {
-  font-size: 7.5vw;
+  font-size: 6vw;
   color: #ffffff;
   font-weight: 400;
+}
+
+.bottom-nav {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.bottom-nav ul {
+  display: inline-flex;
+  height: 70%;
+  width: 80%;
+  list-style-type: none;
+  margin: 5vw;
+  justify-content: space-between;
+  padding-inline-start: 0px;
+}
+
+.bottom-nav li a {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 6vw;
+  text-decoration: none;
+}
+
+.bottom-nav a:hover {
+  text-decoration: underline;
+}
+
+.bottom-nav a:visited {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .main-nav ul li a {display: none;}
+  .main-nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+.main-nav ul {
+  padding: 0; 
+  margin: 0;
+  list-style: none;
+}
+
+.main-nav ul li #logo {
+  float: left;
+}
+
+.main-nav ul li{
+  float: right;
+  margin-left: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.main-nav ul li a{
+  text-decoration: none;
+  color: #222222;
+}
+
+/* The links hide when the screen is less than 600 pixels wide. (.icon) will be shown to open and close the nav. */
+.main-nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* I add the "responsive" class to the main-nav with JavaScript so that  when the user clicks on the icon, the main-nav corresponds to the size of smaller screens. It displays the links vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .main-nav.responsive {
+    position: relative;
+  }
+  .main-nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .main-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
